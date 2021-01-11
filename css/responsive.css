@@ -1,0 +1,499 @@
+@charset "UTF-8";
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 1358px) {
+    .single-specialization {
+        min-width: 470px;
+    }
+    .specializationBx {
+        top: 60%;
+    }
+}
+
+@media only screen and (max-width: 1303px) {
+    .single-card {
+        min-width: 316px;
+    }
+    .card-container {
+        margin: 0px 20px;
+    }
+    .subs-area button {
+        min-width: 112px;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .dropdown {
+        display: block;
+    }
+    .page {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1183px) {
+    .single-card {
+        min-width: 280px;
+    }
+    .single-specialization {
+        min-width: 470px;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .specializationBx {
+        top: 125px;
+        left: 0;
+        transform: none;
+        padding: 0;
+    }
+    .projectsBx {
+        top: 165px;
+        left: 0;
+        transform: none;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1115px) {
+    progress {
+        min-width: 235px;
+    }
+    .resume-download {
+        position: relative;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    .single-card {
+        min-width: 260px;
+    }
+}
+
+@media only screen and (max-width: 1048px) {
+    .aboutBx {
+        padding: 0px 40px;
+    }
+}
+
+/* burgur menu */
+@media only screen and (max-width: 1036px) {
+    .checkBtn{
+        display: block;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .navUl {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #b3b3b3;
+        margin-top: 5px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        top: 84px;
+        display: block;
+        padding-top: 40px;
+    }
+    .dropdown {
+        display: none;
+    }
+    .page {
+        display: block;
+    }
+    .navUl li {
+        margin: 30px 5px;
+    }
+    .navUl li a {
+        font-size: 18px;
+    }
+    .navUl li a:hover {
+        filter: none;
+        border-bottom: none;
+        border-bottom-style: none;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 1036px) {
+    .home {
+        height: auto;
+        top: 0px;
+    }
+    .homeBx {
+        top: 190px;
+        left: 0;
+        transform: none;
+    }
+    .about {
+        height: auto;
+        top: 220px;
+    }
+    .aboutBx {
+        top: 130px;
+        left: 0;
+        transform: none;
+    }
+    .achievements {
+        height: auto;
+        top: 445px;
+    }
+    .achievementBx {
+        top: 150px;
+        left: 0;
+        transform: none;
+    }
+    .specialization {
+        height: auto;
+        top: 635px;
+    }
+    .specializationBx {
+        top: 150px;
+    }
+    .projects {
+        height: auto;
+        top: 840px;
+    }
+    .projectsBx {
+        top: 135px;
+    }
+    .site_footer {
+        height: auto;
+        top: 1050px;
+    }
+    .footerBx {
+        top: 20px;
+        left: 0;
+        transform: none;
+    }
+    .email-subs {
+        top: 0;
+    }
+    body {
+        background-repeat: repeat;
+    }
+    .contact-footer {
+        transform: translateY(-82%);
+    }
+    .info-container {
+        position: relative;
+        display: block;
+    }
+    .contact-info {
+        position: relative;
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .info-wrapper {
+        position: relative;
+        display: flex;
+        margin: 50px 20px 30px;
+    }
+    .single-info {
+        flex-direction: column;
+        min-width: max-content;
+    }
+    .contact-info h2 {
+        font-size: 32px;
+    }
+    .info-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .social-icon {
+        justify-content: center;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .map {
+        transform: translateY(115%);
+    }
+    .map iframe {
+        width: 100%;
+        height: 300px;
+    }
+} 
+
+
+@media only screen and (max-width: 1012px) {
+    .single-card {
+        min-width: 335px;
+    }
+} 
+
+@media only screen and (max-width: 1000px) {
+    .email-subs {
+        display: block;
+        text-align: center;
+        padding: 40px 150px;
+    }
+    .subs-heading {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .subs-area {
+        width: 100%;
+    }
+    .email-subs {
+        padding: 40px 70px;
+    }
+    .single-specialization {
+        min-width: 70%;
+    }
+} 
+
+@media only screen and (max-width: 918px) {
+    .about-head {
+        margin-bottom: 15px;
+    }
+    .about-head h2, .about-head h3 {
+        text-align: center;
+        padding: 0px 100px;
+    }
+    .about-cont {
+        display: block;
+    }
+    .left-section {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .right-section {
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .about-progress {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-progress div {
+        margin: 5px auto;
+    }
+    .resume-download {
+        text-align: center;
+    }
+    .resume-download a {
+        padding: 14px 22%;  
+    }
+}
+
+@media only screen and (max-width: 889px) {
+    .link-container {
+        display: block;
+        text-align: center;
+    }
+    .contact-footer {
+        transform: translateY(-65%);
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .single-card {
+        min-width: 280px;
+    }
+}
+
+@media only screen and (max-width: 819px) {
+    .info-wrapper {
+        flex-wrap: wrap;
+    }
+    .map {
+        transform: translateY(170%);
+    }
+    .contact-footer {
+        transform: translateY(-42%);
+    }
+}
+
+@media only screen and (max-width: 814px) {
+    progress {
+        min-width: 295px;
+    }
+}
+
+@media only screen and (max-width: 758px) {
+    .about-head h2, .about-head h3 {
+        padding: 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 772px) {
+    .glide__track {
+        margin-left: 24%;
+    }
+}
+
+@media only screen and (max-width: 738px) {
+    .introTxt {
+        margin-bottom: 60px; 
+    }
+    .introTxt h2 {
+        font-size: 5.54rem;
+        margin-bottom: 30px;
+    }
+    .posLeft {
+        left: 0;
+        margin-bottom: -112px;
+    }
+    .posRight {
+        left: 0;
+    }
+    .introTxt h3 {
+        width: 70%;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 703px) {
+    .glide__track {
+        margin-left: 17%;
+    }
+    .contact-footer {
+        transform: translateY(-30%);
+    }
+}
+
+@media only screen and (max-width: 697px) {
+    progress {
+        min-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 678px) {
+    .single-project {
+        min-width: 400px;
+        height: 260px;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .subs-area {
+        display: block;  
+    }
+    .subs-area input {
+        margin-bottom: 25px; 
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .achievementBx, .aboutBx {
+        padding: 0px 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .achievementBx, .aboutBx {
+        padding: 0px 30px;
+    }
+    .contactBx {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 578px)  {
+    progress {
+        min-width: 355px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .glide__track {
+        margin-left: 7%;
+    }
+    .email-subs {
+        padding: 40px 0px;
+    }
+    .about-head h2, .about-head h3 {
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 482px) {
+    .resume-download a {
+        padding: 14px 7%;
+    } 
+}
+
+@media only screen and (max-width: 450px) {
+    .contact-form {
+        padding: 35px 10px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .introTxt h2 {
+        font-size: 5rem;
+    }
+    .viewSpecBtn a {
+        padding: 14px 20px;
+    }
+    .glide__track {
+        margin-left: 0%;
+    }
+    .single-project {
+        min-width: 340px;
+        height: 245px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .introTxt h2 {
+        font-size: 4rem;
+    }
+    .posLeft {
+        margin-bottom: -90px;
+    }
+    .introTxt h3 {
+        font-size: 2em;
+    }
+    .viewSpecBtn a {
+        font-size: 18px;
+    }
+    .about-head h2, .about-head h3 {
+        padding: 0;
+    }
+    .heading-two {
+        font-size: 2.5em;
+    }
+    .subs-area input {
+        min-width: 80%;
+    }
+    progress {
+        min-width: 250px;
+    }
+    .single-project {
+        min-width: 285px;
+        height: 220px;
+    }
+    .achievementBx,.footerBx {
+        padding: 0px;
+    }
+    .aboutBx {        
+        padding: 0px 15px;
+    }
+}
+
+/* temporary*/
+@media only screen and (max-width: 436px) {
+    .placeholderBx {
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .view-more a {
+        padding: 14px 14px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .contact-footer {
+        transform: translateY(-25%);
+    }
+}

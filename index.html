@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<title>Adnan Maruf - Software Engineer</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="img/siteLogo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/scrollIt.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<header id="headSec" class="site_header">
+		<div class="container">
+			<div class="nav_container">
+				<nav class="nav_area">
+					<a href="index.html">
+						<img class="SiteLogo" src="img/siteLogoBigS.png" aria-label="Site Logo">
+					</a>
+					<input type="checkbox" id="check"  onclick="toggleNav()">
+					<label for="check" class="checkBtn">
+						<i class="fas fa-bars"></i>
+					</label>
+					<ul class="navUl" id="navUl">
+						<li><a href="#" onclick="hideULnav()"  data-scroll-nav="0">Home</a></li>
+						<li><a href="#" onclick="hideULnav()"  data-scroll-nav="1">About</a></li>
+						<li><a href="#" onclick="hideULnav()"  data-scroll-nav="2">Achievements</a></li>
+						<li><a href="#" onclick="hideULnav()"  data-scroll-nav="3">Specialization</a></li>
+						<li><a href="#" onclick="hideULnav()"  data-scroll-nav="4">Projects</a></li>
+						<li class="page"><a href="portfolio.html" onclick="hideULnav()">Portfolio</a></li>
+						<li class="page"><a href="gallery.html" onclick="hideULnav()">Gallery</a></li>
+						<li class="page"><a href="contact.html" onclick="hideULnav()">Contact</a></li>
+						<li class="dropdown">
+							<div class="dropdown-links">
+								<span class="dropbtn">Pages</span>
+								<i class="fas fa-sort-down" style="position: relative;top: -2px;font-size: 18px;"></i>
+								<div class="dropdown-content">
+									<a href="portfolio.html" onclick="hideULnav()">Portfolio</a>
+									<a href="gallery.html" onclick="hideULnav()">Gallery</a>
+									<a href="contact.html" onclick="hideULnav()">Contact</a>
+								</div>
+							  </div>
+						</li>
+						<li>
+							<section class="getUpdt">
+								<a class="getUpdtBtn" onclick="hideULnav()" href="#" data-scroll-goto="5">Get Update</a>
+							</section>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<script>
+		window.onscroll = function () {navBar_toggle(), ViewportAbout()};
+	</script>
+	<main>
+		
+		<div id="Home" class="home" data-scroll-index="0">
+			<div class="container">
+				<div class="homeBx">
+					<section class="introTxt">
+						<h2><span class="color-pink posLeft">Hi! there,</span><br> <span class="color-black posRight">I'm Adnan</span></h2>
+						<h3>Software Engineer &amp; IT-Executive</h3>
+					</section>
+					<section class="viewSpecBtn" id="link1_0" onclick="clickLink(this)">
+						<a href="#Specialization" data-scroll-nav="3"> View Specialization</a>
+					</section>
+					<section class="scrollArrow color-pink">
+						<i class="fas fa-angle-double-down fa-5x"></i>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<div id="About" class="about" data-scroll-index="1">
+			<div class="container">
+				<div class="aboutBx">
+					<div class="about-head">
+						<h2 class="heading-two"><span class="color-pink">Let's</span> talk about me for a little bit</h2>
+						<h3 class="heading-three">I’m a Creative director based on New York, who loves clean,<br> simple & unique design. I also enjoy crafting</h3>
+					</div>
+					<div class="about-cont content">
+						<section class="left-section">
+							<p>
+								Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum. Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.
+								Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget! 
+							</p>
+						</section>
+						<section class="right-section">
+							<div class="about-progress">
+								<div>
+									<span>Knowledge -</span>
+									<span id="barVal1">60%</span><br>
+									<progress id="bar1" value="60" max="100"></progress>
+								</div>
+								<div>
+									<span>Experience -</span>
+									<span id="barVal2">35%</span><br>
+									<progress id="bar2" value="35" max="100"></progress>
+								</div>
+								<div>
+									<span>Problem Solving -</span>
+									<span id="barVal3">70%</span><br>
+									<progress id="bar3" value="70" max="100"></progress>
+								</div>
+								<div>
+									<span>Communication Skill -</span>
+									<span id="barVal4">60%</span><br>
+									<progress id="bar4" value="60" max="100"></progress>
+								</div>
+								<div>
+									<span>Complex Thinking -</span>
+									<span id="barVal5">50%</span><br>
+									<progress id="bar5" value="50" max="100"></progress>
+								</div>
+								<div>
+									<span>Academic Result -</span>
+									<span id="barVal6">70%</span><br>
+									<progress id="bar6" value="70" max="100"></progress>
+								</div>
+							</div>
+						</section>
+					</div>
+					<section class="resume-download">
+						<a href="#Download">Download Resume</a>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<div id="Achievements" class="achievements" data-scroll-index="2">
+			<div class="container">
+				<div class="achievementBx">
+					<section class="achievement-head">
+						<h2 class="heading-two"><span class="color-pink">My</span> Achievements</h2>
+						<p class="content">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content</p>
+					</section>
+					<div class="card-container glide">
+						<div class="glide__track" data-glide-el="track">
+							<ul class="glide__slides">
+							  <li class="glide__slide">
+								<div class="single-card">
+									<div class="card-img">
+										<img src="img/acv1.png" alt="">
+									</div>
+									<div class="card-title">
+										<h3>Introduction to HTML5</h3>
+									</div>
+									<div class="card-description">
+										<p>Thanks to a growing number of software programs, it seems as if anyone can make a webpage. But what if you actually want to understand how the page was created.</p>
+									</div>
+									<div class="card-link">
+										<a href="https://www.coursera.org/account/accomplishments/verify/5BXDL98EKQN5" target="_blank">View Certificate</a>
+									</div>
+								</div>
+							  </li>
+							  <li class="glide__slide">
+								<div class="single-card">
+									<div class="card-img">
+										<img src="img/acv1.png" alt="">
+									</div>
+									<div class="card-title">
+										<h3>Introduction to CSS3</h3>
+									</div>
+									<div class="card-description">
+										<p>The web today is almost unrecognizable from the early days of white pages with lists of blue links.  Now, sites are designed with complex layouts and customized color schemes.</p>
+									</div>
+									<div class="card-link">
+										<a href="https://www.coursera.org/account/accomplishments/verify/57NG9RDHMSTR" target="_blank">View Certificate</a>
+									</div>
+								</div>
+							  </li>
+							  <li class="glide__slide">
+								<div class="single-card">
+									<div class="card-img">
+										<img src="img/acv1.png" alt="">
+									</div>
+									<div class="card-title">
+										<h3>Interactivity with JS</h3>
+									</div>
+									<div class="card-description">
+										<p>If you want to take your website to the next level, the ability to incorporate interactivity is a must. This course will introduce you to the basics of the JavaScript language.</p>
+									</div>
+									<div class="card-link">
+										<a href="https://www.coursera.org/account/accomplishments/verify/HQ7UKMLK8JXP" target="_blank">View Certificate</a>
+									</div>
+								</div>
+							  </li>
+							  <li class="glide__slide">
+								<div class="single-card">
+									<div class="card-img">
+										<img src="img/acv2.png" alt="">
+									</div>
+									<div class="card-title">
+										<h3>Modern JavaScript: ES6</h3>
+									</div>
+									<div class="card-description">
+										<p>Mastering modern JavaScript starts with understanding the reasoning behind the main ES6 features The concepts behind Node, React and Angular</p>
+									</div>
+									<div class="card-link">
+										<a href="https://www.coursera.org/account/accomplishments/verify/98QYPKVP7CLM" target="_blank">View Certificate</a>
+									</div>
+								</div>
+							  </li>
+							  <li class="glide__slide">
+								<div class="single-card">
+									<div class="card-img">
+										<img src="img/acv1.png" alt="">
+									</div>
+									<div class="card-title">
+										<h3>Advanced Styling with Responsive Design</h3>
+									</div>
+									<div class="card-description">
+										<p>It used to be the case that everyone viewed webpages on about the same size screen.</p>
+									</div>
+									<div class="card-link">
+										<a href="https://www.coursera.org/account/accomplishments/verify/ADHBC8SBFDYC" target="_blank">View Certificate</a>
+									</div>
+								</div>
+							  </li>
+							</ul>
+						  </div>
+						  <!-- <div class="glide__arrows" data-glide-el="controls">
+							  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-angle-left"></i></button>
+							  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-angle-right"></i></button>
+						  </div> -->
+						  <div class="glide__bullets" data-glide-el="controls[nav]">
+							  <button class="glide__bullet" data-glide-dir="=0"></button>
+							  <button class="glide__bullet" data-glide-dir="=1"></button>
+							  <button class="glide__bullet" data-glide-dir="=2"></button>
+							  <button class="glide__bullet" data-glide-dir="=3"></button>
+							  <button class="glide__bullet" data-glide-dir="=4"></button>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="Specialization" class="specialization" data-scroll-index="3">
+			<div class="container">
+				<div class="specializationBx">
+					<section class="specialization-head">
+						<h2 class="heading-two"><span class="color-pink">My</span> Specialization</h2>
+						<p class="content">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content</p>
+					</section>
+					<div class="specialization-container">
+						<div class="single-specialization">
+							<i class="fab fa-windows fa-3x" aria-hidden="true"></i>
+							<h3>Windows Forms</h3>
+							<p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document</p>
+						</div>
+						<div class="single-specialization">
+							<i class="fas fa-globe fa-3x" aria-hidden="true"></i>
+							<h3>Web Design</h3>
+							<p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document</p>
+						</div>
+						<div class="single-specialization">
+							<i class="fas fa-mobile-alt fa-3x" aria-hidden="true"></i>
+							<h3>Android App</h3>
+							<p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document</p>
+						</div>
+						<div class="single-specialization">
+							<i class="fab fa-sketch fa-3x" aria-hidden="true"></i>
+							<h3>UI/UX Design</h3>
+							<p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document</p>
+						</div>
+					</div>
+					<div class="view-more">
+						<a href="#Portfolio">Download Portfolio</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Projects" class="projects" data-scroll-index="4">
+			<div class="container">
+				<div class="projectsBx">
+					<section class="projetcs-head">
+						<h2 class="heading-two"><span class="color-pink">All</span> Projects</h2>
+					</section>
+					<div class="projects-container">
+						<div class="single-project">
+							<div class="project_img">
+								<img src="img/DemoPrjct.jpg" alt="">
+							</div>
+							<div class="hover_overlay"></div>
+							<div class="project_details">
+								<span class="project_name">
+									VoiceBox
+								</span>
+								<span class="project_link">
+									<a href="#">View Demo</a>
+								</span>
+							</div>
+						</div>
+						<div class="single-project">
+							<div class="project_img">
+								<img src="img/DemoPrjct.jpg" alt="">
+							</div>
+							<div class="hover_overlay"></div>
+							<div class="project_details">
+								<span class="project_name">
+									VoiceBox
+								</span>
+								<span class="project_link">
+									<a href="#">View Demo</a>
+								</span>
+							</div>
+						</div>
+						<div class="single-project">
+							<div class="project_img">
+								<img src="img/DemoPrjct.jpg" alt="">
+							</div>
+							<div class="hover_overlay"></div>
+							<div class="project_details">
+								<span class="project_name">
+									VoiceBox
+								</span>
+								<span class="project_link">
+									<a href="#">View Demo</a>
+								</span>
+							</div>
+						</div>
+						<div class="single-project">
+							<div class="project_img">
+								<img src="img/DemoPrjct.jpg" alt="">
+							</div>
+							<div class="hover_overlay"></div>
+							<div class="project_details">
+								<span class="project_name">
+									VoiceBox
+								</span>
+								<span class="project_link">
+									<a href="#">View Demo</a>
+								</span>
+							</div>
+						</div>
+						<div class="single-project">
+							<div class="project_img">
+								<img src="img/DemoPrjct.jpg" alt="">
+							</div>
+							<div class="hover_overlay"></div>
+							<div class="project_details">
+								<span class="project_name">
+									VoiceBox
+								</span>
+								<span class="project_link">
+									<a href="#">View Demo</a>
+								</span>
+							</div>
+						</div>
+						<div class="single-project">
+							<div class="project_img">
+								<img src="img/DemoPrjct.jpg" alt="">
+							</div>
+							<div class="hover_overlay"></div>
+							<div class="project_details">
+								<span class="project_name">
+									VoiceBox
+								</span>
+								<span class="project_link">
+									<a href="#">View Demo</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="site_footer" id="Get_Update" data-scroll-index="5">
+				<div class="container">
+					<div class="email-subs">
+						<div class="subs-heading">
+							<h3>Subscribe to get update</h3>
+							<p>Subscribe newsletter to get offers and about new places to discover.</p>
+						</div>
+						<div class="subs-area">
+							<input type="Email" placeholder="Your Email Address" name="Email" class="Email">
+							<button type="button" class="SubscribeBtn">Subscribe</button>
+						</div>
+					</div>
+					<div class="footerBx">
+							<section class="links-heading">
+								<h2>Do you have any Project?</h2>
+								<p>Connect &amp; talk to me on my social accounts.</p>
+							</section>
+							<div class="link-container">
+								<div class="single-link">
+									<a href="#">
+										<div class="social_link_name">
+											<span>Linkedin</span>
+										</div>
+										<div class="social_link_icon">
+											<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+										</div>
+									</a>
+								</div>
+								<div class="single-link">
+									<a href="#">
+										<div class="social_link_name">
+											<span>Facebook</span>
+										</div>
+										<div class="social_link_icon">
+											<i class="fab fa-facebook-f" aria-hidden="true"></i>
+										</div>
+									</a>
+								</div>
+								<div class="single-link">
+									<a href="#">
+										<div class="social_link_name">
+											<span>Instagram</span>
+										</div>
+										<div class="social_link_icon">
+											<i class="fab fa-instagram" aria-hidden="true"></i>
+										</div>
+									</a>
+								</div>
+								<div class="single-link">
+									<a href="#">
+										<div class="social_link_name">
+											<span>Twitter</span>
+										</div>
+										<div class="social_link_icon">
+											<i class="fab fa-twitter" aria-hidden="true"></i>
+										</div>
+									</a>
+								</div>
+							</div>
+						<div class="footer_copyright">
+							<p>Copyright ©2020 All rights reserved | This website is made by</p>
+							<span class="color-pink"><abbr title="Adnan Maruf Dip">&#9825;AMD&#9825;</abbr></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+	<script>
+		$(function(){
+			$.scrollIt({
+
+			easing: 'swing',      // the easing function for animation
+			scrollTime: 900,       // how long (in ms) the animation takes
+			activeClass: 'active', // class given to the active nav element
+			onPageChange: null,    // function(pageIndex) that is called when page is changed
+			topOffset: 0,
+			upKey: 38,                // key code to navigate to the next section
+			downKey: 40          // key code to navigate to the previous section
+
+		});
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+	<script>
+	
+		new Glide('.glide', {
+		type: 'carousel',
+		startAt: 0,
+		perView: 4,
+		hoverpause: true,
+		breakpoints: {
+		1303: {
+		  perView: 3
+		},
+		1012: {
+		  perView: 2
+		},
+		772: {
+		  focusAt: 'center',
+		  perView: 1
+		  
+		}
+		}
+		}).mount()
+	
+	</script>
+</body>
+</html>

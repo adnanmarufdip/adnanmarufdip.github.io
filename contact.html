@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Adnan Maruf - Software Engineer</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/siteLogo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">	
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="js/scrollIt.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+<body>
+	<header id="headSec" class="site_header">
+		<div class="container">
+			<div class="nav_container">
+				<nav class="nav_area">
+					<a href="index.html">
+						<img class="SiteLogo" src="img/siteLogoBigS.png" aria-label="Site Logo">
+					</a>
+					<input type="checkbox" id="check"  onclick="toggleNav()">
+					<label for="check" class="checkBtn">
+						<i class="fas fa-bars"></i>
+					</label>
+					<ul class="navUl" id="navUl">
+						<li><a href="index.html#Home" onclick="hideULnav()">Home</a></li>
+						<li class="page"><a href="portfolio.html" onclick="hideULnav()">Portfolio</a></li>
+						<li class="page"><a href="gallery.html" onclick="hideULnav()">Gallery</a></li>
+						<li><a href="contact.html"  onclick="hideULnav()" class="active">Contact</a></li>
+						<li>
+							<section class="getUpdt">
+								<a class="getUpdtBtn" onclick="hideULnav()" href="#" data-scroll-goto="5">Get Update</a>
+							</section>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+    <script>
+		window.onscroll = function () {navBar_toggle()};
+	</script>
+    <main>
+        <div class="contact">
+            <div class="container">
+                <div class="contactBx">
+                    <section class="info-container">
+                        <div class="contact-info">
+                            <h2>Contact Information</h2>
+                            <div class="info-wrapper">
+                                <div class="single-info">
+                                    <div class="info-icon">
+                                        <i class="fas fa-home" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <h3>Dhaka, Bangladesh</h3>
+                                        <p>Mohakhali, TB Gate</p>
+                                    </div>
+                                </div>
+                                <div class="single-info">
+                                    <div class="info-icon">
+                                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <h3>+(880) 1739 712807</h3>
+                                        <p>Mon to Fri: 10am to 5pm</p>
+                                    </div>
+                                </div>
+                                <div class="single-info">
+                                    <div class="info-icon">
+                                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <h3>adnan.marufamd@gmail.com</h3>
+                                        <p>Send me your quary anytime!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-form" onmouseover="changecolor()" onmouseleave="revartcolor()">
+                            <h3 onmouseover="changecolor()" onmouseleave="revartcolor()">Get in <span class="color-pink"> touch</span></h3>
+                            <div class="title-field" onmouseover="changecolor()" onmouseleave="revartcolor()">
+                                <input type="text" placeholder="Enter your subject" name="subjact" id="subjact">
+                            </div>
+                            <div class="summary-field" onmouseover="changecolor()" onmouseleave="revartcolor()">
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="email-field" onmouseover="changecolor()" onmouseleave="revartcolor()">
+                                <input type="email" placeholder="Enter email address" name="email" id="email">
+                            </div>
+                            <div class="name-field" onmouseover="changecolor()" onmouseleave="revartcolor()">
+                                 <input type="text" placeholder="Enter your name" name="name" id="name">
+                            </div>
+                            <div class="submit-button" onmouseover="changecolor()" onmouseleave="revartcolor()">
+                                <button type="submit" class="btnSubmit" value="send">Send Message</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211457.20906757802!2d90.27923844790661!3d23.780887455286116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e1!3m2!1sen!2sbd!4v1606694717651!5m2!1sen!2sbd" width="807" height="310" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="contact-footer">
+        <div class="site_footer" id="Get_Update" data-scroll-index="5">
+            <div class="container">
+                <div class="email-subs">
+                    <div class="subs-heading">
+                        <h3>Subscribe to get update</h3>
+                        <p>Subscribe newsletter to get offers and about new places to discover.</p>
+                    </div>
+                    <div class="subs-area">
+                        <input type="Email" placeholder="Your Email Address" name="Email" class="Email">
+                        <button type="button" class="SubscribeBtn">Subscribe</button>
+                    </div>
+                </div>
+                <div class="footerBx">
+                        <section class="links-heading">
+                            <h2>Do you have any Project?</h2>
+                            <p>Connect &amp; talk to me on my social accounts.</p>
+                        </section>
+                        <div class="link-container">
+                            <div class="single-link">
+                                <a href="#">
+                                    <div class="social_link_name">
+                                        <span>Linkedin</span>
+                                    </div>
+                                    <div class="social_link_icon">
+                                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-link">
+                                <a href="#">
+                                    <div class="social_link_name">
+                                        <span>Facebook</span>
+                                    </div>
+                                    <div class="social_link_icon">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-link">
+                                <a href="#">
+                                    <div class="social_link_name">
+                                        <span>Instagram</span>
+                                    </div>
+                                    <div class="social_link_icon">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="single-link">
+                                <a href="#">
+                                    <div class="social_link_name">
+                                        <span>Twitter</span>
+                                    </div>
+                                    <div class="social_link_icon">
+                                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <div class="footer_copyright">
+                        <p>Copyright ©2020 All rights reserved | This website is made by</p>
+                        <span class="color-pink"><abbr title="Adnan Maruf Dip">&#9825;AMD&#9825;</abbr></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+		$(function(){
+			$.scrollIt({
+
+			easing: 'swing',      // the easing function for animation
+			scrollTime: 900,       // how long (in ms) the animation takes
+			activeClass: 'active', // class given to the active nav element
+			onPageChange: null,    // function(pageIndex) that is called when page is changed
+			topOffset: 0,
+			upKey: 38,                // key code to navigate to the next section
+			downKey: 40          // key code to navigate to the previous section
+
+		});
+		});
+	</script>
+</body>
+</html>
